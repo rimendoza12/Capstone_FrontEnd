@@ -1,0 +1,72 @@
+
+.boxForm {
+    padding: 7.5%;
+    background-color: rgba(255, 255, 255, 0.837);
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: rgb(85, 108, 133) 0px 20px 30px -10px;
+
+}
+.formAlign {
+    display: flex !important; 
+    
+    
+    justify-content: center !important;
+    
+    
+}
+
+.fontSize {
+    font-size: 20px;
+    margin-top: 10px !important;
+    
+}
+
+ .buttonSubmit1 {
+     
+    background-color: rgb(24, 179, 114)!important;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    justify-content:center !important;
+    color:rgb(61, 5, 107)!important;
+    
+    
+}
+
+.buttonSubmit1:hover{
+    background-color:black;
+    cursor: pointer;
+    transform: scale(1.2);}
+
+
+ .buttonSubmit2 {
+    height: 50px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: rgb(24, 179, 114) !important;
+    border-radius: 5px !important;
+    margin-top: 5px !important;
+    margin-bottom: 50px !important;
+    justify-content:center!important;
+    color:black !important;
+    
+    
+}
+
+.buttonSubmit2:hover{
+    background-color: white; 
+    cursor: pointer;
+    transform: scale(1.2);
+} 
+
+@media only screen and (max-width: 600px){
+.boxForm {
+    padding-top: 15%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+}

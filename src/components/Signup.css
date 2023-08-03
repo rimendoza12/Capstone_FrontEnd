@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700&display=swap'); 
+
+.formAlign {
+    display:flex;
+    width:100% !important;
+    font-family: 'Poppins';
+    justify-content:center !important;
+    align-items:center !important;
+}
+
+.fontSize {
+    font-size: 20px;
+    margin-top: 10px !important;
+}
+
+.buttonSubmit3{
+    background-color: rgb(24, 179, 114) !important;
+    margin-top: 10px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    height: 50px !important;
+    text-decoration: none !important;
+    font-size: 15px !important;
+    color:rgb(61, 5, 107)!important;
+}
+
+.buttonSubmit3:hover{
+    
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.buttonSubmit4 {
+    height: 50px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: rgb(24, 179, 114) !important;
+    border-radius: 5px !important;
+    margin-top: 5px !important; 
+    margin-bottom: 10px !important;
+    text-decoration: none !important;
+    
+    
+}
+
+.buttonSubmit4:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
