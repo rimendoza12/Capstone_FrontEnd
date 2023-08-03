@@ -23,6 +23,8 @@ function Login () {
   const [error, setError] = useState('');
   const [submitLoading, setSubmitLoading] = useState(false);
 
+  const apiBackendUrl = process.env.REACT_APP_BACK_END_URL;
+
   const handleLogin = async (event) => {
     event.preventDefault();
     setError('');
@@ -33,8 +35,7 @@ function Login () {
       return;
     }else{
       try {
-        const response = await axios.post('http://ec2-13-238-120-14.ap-southeast-2.compute.amazonaws.com/api/login',formData);
-        
+        const response = await axios.post(`${apiBackendUrl}/login`,formData);
         const token = response.data.token;
         
         localStorage.setItem('login_token',token);
