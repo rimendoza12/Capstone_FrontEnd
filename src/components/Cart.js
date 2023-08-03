@@ -19,7 +19,7 @@ const Cart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try{
-        const response = await axios.get(`${apiBackendUrl}/login`, {
+        const response = await axios.get(`${apiBackendUrl}/services`, {
           headers: {
             Authorization: 'Bearer ' + localStorage.getItem('login_token'),
           }
