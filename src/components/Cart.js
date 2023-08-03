@@ -13,11 +13,13 @@ const Cart = () => {
   const [selectedTime, setSelectedTime] = useState(null);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const apiBackendUrl = process.env.REACT_APP_BACK_END_URL;
   
   useEffect(() => {
     const fetchData = async () => {
       try{
-        const response = await axios.get('http://127.0.0.1:8000/api/services', {
+        const response = await axios.get(`${apiBackendUrl}/login`, {
           headers: {
             Authorization: 'Bearer ' + localStorage.getItem('login_token'),
           }

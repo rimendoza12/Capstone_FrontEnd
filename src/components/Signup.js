@@ -18,6 +18,8 @@ export default function Signup() {
 
     const [error, setError] = useState('');
     const [submitLoading, setSubmitLoading] = useState(false);
+    
+    const apiBackendUrl = process.env.REACT_APP_BACK_END_URL;
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -30,7 +32,7 @@ export default function Signup() {
         }else{
           //call api register
           try {
-            const response = await axios.post('http://127.0.0.1:8000/api/register',signUp);
+            const response = await axios.post(`${apiBackendUrl}/register`,signUp);
             console.log(response);
             setSignUp({
               name: "",
